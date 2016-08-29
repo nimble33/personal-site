@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Text Classify</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" link href="/static/mycss.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <div class="container">
+  <div class="page-header">
+    <h1>Tefy - TExt classiFY</h1>
+  </div>
+  <p>Uses ML to classify text as positive or negative..</p>
+  <p>Also tries to predict rating within 1-5.</p>
+</div>
+
+<div class="container" >
+
+<!--<form method ="POST" action="get_text">-->
+
+<!--  {% csrf_token %}-->
+<!--    {{form.as_p}}-->
+
+<!--  <button type="submit" class="btn btn-primary">Submit</button>-->
+<!--</form>-->
+<form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Submit</button>
+    </form>
+
+</div>
+</body>
+</html>

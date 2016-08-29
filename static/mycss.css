@@ -1,0 +1,11 @@
+.img-circle {
+    border-radius: 50%;
+}
+
+.spancenter{text-align: center}
+
+.bcg1 {background-color: black}
+
+.foot-below{padding:25px 0;background-color:black}
+.foot-above{padding-top:50px;background-color:grey}
+.bcg2 {background-color: grey}
